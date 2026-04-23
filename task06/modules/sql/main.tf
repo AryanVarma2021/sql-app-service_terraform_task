@@ -18,6 +18,11 @@ resource "azurerm_mssql_server" "sql_server" {
 
 
 
+  tags = var.tags
+
+
+
+
 
 }
 
@@ -26,6 +31,8 @@ resource "azurerm_mssql_firewall_rule" "allow_azure_services" {
   server_id        = azurerm_mssql_server.sql_server.id
   start_ip_address = "0.0.0.0"
   end_ip_address   = "0.0.0.0"
+
+  
 
 
 }
@@ -45,6 +52,9 @@ resource "azurerm_mssql_database" "sql_db" {
   sku_name  = var.sql_db_sku_name
 
 
+  tags = var.tags
+
+
 
 
 
@@ -58,6 +68,8 @@ resource "azurerm_key_vault_secret" "sql_username" {
 
   key_vault_id = var.key_vault_id
 
+  tags = var.tags
+
 }
 
 resource "azurerm_key_vault_secret" "sql_password" {
@@ -66,4 +78,6 @@ resource "azurerm_key_vault_secret" "sql_password" {
   value = random_password.sql_password_generator.result
 
   key_vault_id = var.key_vault_id
+
+  tags = var.tags
 }

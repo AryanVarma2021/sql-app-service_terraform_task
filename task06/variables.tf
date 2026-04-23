@@ -4,6 +4,18 @@ variable "key_vault_name" {
 
 }
 
+variable "key_vault_rg_name" {
+  type        = string
+  description = "Name of the resource group where the Key Vault is located"
+
+}
+
+variable "tags" {
+    type        = map(string)
+    description = "Tags to be applied to the resources"
+  
+}
+
 
 
 variable "name_prefix" {

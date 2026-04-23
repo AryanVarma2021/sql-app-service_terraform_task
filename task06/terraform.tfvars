@@ -4,7 +4,7 @@ tags = {
 
 key_vault_name = "cmaz-z5t7jrzx-mod6-kv"
 
-
+key_vault_rg_name = "cmaz-z5t7jrzx-mod6-kv-rg"
 
 name_prefix = "cmaz-z5t7jrzx-mod6"
 

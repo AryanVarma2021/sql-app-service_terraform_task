@@ -71,3 +71,9 @@ variable "sql_password_name" {
   description = "Name of the secret in Key Vault to store SQL Server password"
 
 }
+
+variable "tags" {
+    type        = map(string)
+    description = "Tags to be applied to the resources"
+    
+    }

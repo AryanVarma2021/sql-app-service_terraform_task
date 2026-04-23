@@ -9,6 +9,8 @@ resource "azurerm_service_plan" "app_service_plan" {
 
   sku_name = var.service_plan_sku_name
 
+  tags = var.tags
+
 
 }
 
@@ -37,6 +39,10 @@ resource "azurerm_linux_web_app" "linux_app" {
     type  = "SQLAzure"
     value = var.sql_connection_string
   }
+
+
+
+  tags = var.tags
 
 
 
