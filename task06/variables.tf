@@ -81,5 +81,11 @@ variable "service_plan_sku_name" {
 
 }
 
+variable "dotnet_version" {
+    type        = string
+    description = "version of dotnet for the web app"
+  
+}
+
 
 

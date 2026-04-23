@@ -66,6 +66,8 @@ module "webapp" {
   web_app_name          = local.app_name
   sql_connection_string = module.sql.connection_string
 
+  dotnet_version = var.dotnet_version
+
   tags = var.tags
 
 
