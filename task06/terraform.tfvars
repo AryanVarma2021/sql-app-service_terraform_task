@@ -21,3 +21,7 @@ firewall_rule_name_ip_address = "allowed_ip_address"
 allowed_ip_address = "18.153.146.156"
 
 sql_db_sku_name = "S2"
+
+os_type = "linux"
+
+service_plan_sku_name = "P0"
