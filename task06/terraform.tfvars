@@ -18,7 +18,7 @@ firewall_rule_name_app_service = "allowed_app_services"
 
 firewall_rule_name_ip_address = "allowed_ip_address"
 
-allowed_ip_address = "18.153.146.156/32"
+allowed_ip_address = "18.153.146.156"
 
 sql_db_sku_name = "S2"
 
@@ -31,3 +31,4 @@ service_plan_sku_name = "P0v3"
 sql_admin_name = "sql-admin-name"
 
 sql_pass_name = "sql-admin-password"
+ 
