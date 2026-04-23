@@ -10,11 +10,7 @@ variable "key_vault_rg_name" {
 
 }
 
-variable "tags" {
-    type        = map(string)
-    description = "Tags to be applied to the resources"
-  
-}
+
 
 
 

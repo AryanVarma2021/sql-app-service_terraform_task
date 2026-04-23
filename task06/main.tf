@@ -8,17 +8,17 @@ data "azurerm_key_vault" "key_vault" {
 
 resource "azurerm_resource_group" "rg" {
 
-    name     = local.rg_name
-    location = var.location
-    
-    tags = var.tags
-  
+  name     = local.rg_name
+  location = var.location
+
+  tags = var.tags
+
 }
 
 module "sql" {
 
   source = "./modules/sql"
-  tags = var.tags
+  tags   = var.tags
 
   sql_server_name = local.sql_server_name
   location        = var.location
