@@ -50,8 +50,8 @@ variable "tags" {
 }
 
 variable "dotnet_version" {
-    type        = string
-    description = "version of dotnet for the web app"
-    
-    }
+  type        = string
+  description = "version of dotnet for the web app"
+
+}
 
