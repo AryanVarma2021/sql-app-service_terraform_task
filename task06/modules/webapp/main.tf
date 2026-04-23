@@ -24,12 +24,18 @@ resource "azurerm_linux_web_app" "linux_app" {
   resource_group_name = var.resource_group
 
   site_config {
+    always_on = true
 
     application_stack {
       dotnet_version = var.dotnet_version
 
     }
 
+  }
+
+  app_settings = {
+
+    "WEBSITE_ENABLE_APP_SERVICE_STORAGE" = "false"
   }
 
 
