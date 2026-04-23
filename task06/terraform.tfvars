@@ -18,7 +18,7 @@ firewall_rule_name_app_service = "allowed_app_services"
 
 firewall_rule_name_ip_address = "allowed_ip_address"
 
-allowed_ip_address = "18.153.146.156"
+allowed_ip_address = "18.153.146.156/32"
 
 sql_db_sku_name = "S2"
 
