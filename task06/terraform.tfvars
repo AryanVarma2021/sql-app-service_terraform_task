@@ -27,3 +27,7 @@ dotnet_version = "8.0"
 os_type = "Linux"
 
 service_plan_sku_name = "P0v3"
+
+sql_admin_name = "sql-admin-name"
+
+sql_pass_name = "sql-admin-password"

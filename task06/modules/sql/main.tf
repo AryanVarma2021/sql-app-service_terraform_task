@@ -62,9 +62,9 @@ resource "azurerm_mssql_database" "sql_db" {
 
 
 resource "azurerm_key_vault_secret" "sql_username" {
-  name = var.sql_server_name
+  name = var.sql_admin_name
 
-  value = var.sql_server_name
+  value = var.sql_admin_name
 
   key_vault_id = var.key_vault_id
 

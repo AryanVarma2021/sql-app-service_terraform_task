@@ -11,6 +11,12 @@ variable "location" {
 
 }
 
+variable "sql_admin_name" {
+  type        = string
+  description = "Administrator login for the SQL Server"
+
+}
+
 variable "sql_server_version" {
   type        = string
   description = "Version of the SQL Server"

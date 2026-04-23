@@ -87,5 +87,17 @@ variable "dotnet_version" {
 
 }
 
+variable "sql_admin_name" {
+  type        = string
+  description = "Administrator login for the SQL Server"
+
+}
+
+
+variable "sql_pass_name" {
+  type        = string
+  description = "Name of the SQL Server administrator password in Key Vault"
+}
+
 
 

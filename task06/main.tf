@@ -24,7 +24,7 @@ module "sql" {
   location        = var.location
   resource_group  = azurerm_resource_group.rg.name
 
-
+  sql_admin_name      = var.sql_admin_name
   sql_server_version  = var.sql_server_version
   administrator_login = var.sql_username
 
@@ -38,7 +38,7 @@ module "sql" {
 
   sql_db_name = local.sql_db_name
 
-  sql_password_name = local.sql_pass_name
+  sql_password_name = var.sql_pass_name
 
   key_vault_id = data.azurerm_key_vault.key_vault.id
 
