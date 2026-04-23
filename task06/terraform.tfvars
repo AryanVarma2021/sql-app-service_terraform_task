@@ -16,7 +16,7 @@ sql_username = "azureroot"
 
 firewall_rule_name_app_service = "allowed_app_services"
 
-firewall_rule_name_ip_address = "allowed_ip_address"
+firewall_rule_name_ip_address = "allow-verification-ip"
 
 allowed_ip_address = "18.153.146.156"
 
