@@ -24,6 +24,6 @@ sql_db_sku_name = "S2"
 
 dotnet_version = "8.0"
 
-os_type = "linux"
+os_type = "Linux"
 
-service_plan_sku_name = "P0"
+service_plan_sku_name = "P0v3"
