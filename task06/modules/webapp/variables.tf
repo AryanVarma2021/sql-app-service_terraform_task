@@ -39,6 +39,7 @@ variable "resource_group" {
 variable "sql_connection_string" {
   type        = string
   description = "connection string for the SQL Database"
+  sensitive   = true
 
 }
 
