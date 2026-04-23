@@ -64,7 +64,7 @@ module "webapp" {
   service_plan_sku_name = var.service_plan_sku_name
 
   web_app_name          = local.app_name
-  sql_connection_string = module.sql.connection_string
+  sql_connection_string = module.sql.sql_connection_string
 
   dotnet_version = var.dotnet_version
 

@@ -10,7 +10,7 @@ name_prefix = "cmaz-z5t7jrzx-mod6"
 
 location = "Central India"
 
-sql_server_version = "12"
+sql_server_version = "12.0"
 
 sql_username = "azureroot"
 
