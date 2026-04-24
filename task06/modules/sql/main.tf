@@ -1,7 +1,12 @@
 resource "random_password" "sql_password_generator" {
 
-  length  = 16
-  special = true
+  length           = 16
+  special          = true
+  override_special = "!#$%&*-_+:?"
+  min_upper        = 2
+  min_lower        = 2
+  min_numeric      = 2
+  min_special      = 2
 }
 
 
@@ -64,7 +69,7 @@ resource "azurerm_mssql_database" "sql_db" {
 resource "azurerm_key_vault_secret" "sql_username" {
   name = var.sql_admin_name
 
-  value = var.sql_admin_name
+  value = var.administrator_login
 
   key_vault_id = var.key_vault_id
 
